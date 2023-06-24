@@ -1,0 +1,2 @@
+# Contents
+FASTQC results for the sequencing/read files.
