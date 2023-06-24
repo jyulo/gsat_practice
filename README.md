@@ -1,1 +1,2 @@
 # gsat_practice
+This repository was created by James Lo, student of the Adams Lab in UBC, to practice transcriptomic analyses on the allopolyploid plant *Brassica napus*. For more details, please see the relevant subdirectories.
