@@ -1,0 +1,2 @@
+# Contents
+R code for the local computing portion of the project.
