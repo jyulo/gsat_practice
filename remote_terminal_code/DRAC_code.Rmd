@@ -5,3 +5,11 @@
 
 `prefetch --option-file ./accession_list/SRR_Acc_List.txt`
 
+The `.sra` read files were converted to `.fastq` format by the command:
+
+`fasterq-dump --split-files SRR*/*`
+
+And FASTQC was performed with:
+
+`fastqc [SRR_dir_name]/*fastq*` where each of the six directory names (each corresponding to a pair of `.fastq` files )
+
