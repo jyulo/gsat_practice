@@ -1,0 +1,26 @@
+---
+title: "Brassica napus Transcriptomics - Practice Project"
+author: "James Lo"
+date: "2023-06-28"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Project Description
+
+# Introduction
+
+# Methods
+
+## Remote Computation
+
+## R Analyses
+
+# Results
+
+# Discussions
+
+# Citations
