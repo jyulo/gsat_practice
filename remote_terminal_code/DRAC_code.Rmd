@@ -1,5 +1,5 @@
 
-# Acquiring th
+# Acquiring the Reads
 
 *Brassica napus* Illumina sequencing data was acquired from a previous study by de Jong and Adams (2023), [available on NCBI's SRA Run Selector](https://www.ncbi.nlm.nih.gov/Traces/study/?acc=GSE201225&f=genotype_sam_ss%3An%3Anatural%2520b.%2520napus%3Ac&o=acc_s%3Aa&s=SRR18856171,SRR18856174,SRR18856181,SRR18856184,SRR18856187,SRR18856194); only sequencing data from natural polyploids were selected, for a total of six `.sra` files. An accession list in `.txt` format (`SRR_Acc_List.txt`) was uploaded by the `scp` command to DRAC's Graham cluster, then used to fetch the `.sra` files by the following command:
 
@@ -12,4 +12,8 @@ The `.sra` read files were converted to `.fastq` format by the command:
 And FASTQC was performed with:
 
 `fastqc [SRR_dir_name]/*fastq*` where each of the six directory names (each corresponding to a pair of `.fastq` files )
+
+Note that `fastqc SRR*/*.fastq` was tried previously, but only completed two accessions/`.fastq` pairs before aborting.
+
+# Acquiring the Reference
 
