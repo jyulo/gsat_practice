@@ -37,4 +37,10 @@ Indexing of the reference genome was attempted with the following command:
 
 `STAR --runMode genomeGenerate --genomeDir /star_index --genomeFastaFiles /ref_genome/Darmor_NRGene_pseudomulecules_v1.4_chloroplast_mitochondrium_both_rounds.renamed.fasta --sjdbGTFfile /ref_genome/Darmor_NRGene_pseudomolecules_v1.4_chloroplast_mitochondrium_both_rounds_annotation.sorted.BrassicaNamingStandard.fixed.gff3 --runThreadN 10 --sjdbGTFtagExonParentTranscript Parent --limitGenomeGenerateRAM=200000000000`
 
-Which terminated with an error: `could not create output directory: /star_index for --genomeDir /star_index/`
+Which terminated with an error: 
+
+`EXITING because of fatal OUTPUT FILE error: could not create output directory: /star_index for --genomeDir /star_index/`
+
+`ERROR: Read-only file system`
+
+`SOLUTION: check the path and permissions`
