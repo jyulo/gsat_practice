@@ -35,8 +35,6 @@ and its `md5sum` hash was `a7e5c2b8dde38ab909ecc9f91f4f50ca`. The annotation fil
 
 Indexing of the reference genome was attempted with the following command:
 
-`STAR --runMode genomeGenerate --genomeDir ./star_index --genomeFastaFiles ./ref_genome/Darmor_NRGene_pseudomulecules_v1.4_chloroplast_mitochondrium_both_rounds.renamed.fasta --sjdbGETfile ./ref_genome/Darmor_NRGene_pseudomolecules_v1.4_chloroplast_mitochondrium_both_rounds_annotation.sorted.BrassicaNamingStandard.fixed.gff3 --runThreadN 10 --sjdbGTFtagExonParentTranscript Parent --limitGenomeGenerateRAM 200000000000`
+`STAR --runMode genomeGenerate --genomeDir /star_index --genomeFastaFiles /ref_genome/Darmor_NRGene_pseudomulecules_v1.4_chloroplast_mitochondrium_both_rounds.renamed.fasta --sjdbGTFfile /ref_genome/Darmor_NRGene_pseudomolecules_v1.4_chloroplast_mitochondrium_both_rounds_annotation.sorted.BrassicaNamingStandard.fixed.gff3 --runThreadN 10 --sjdbGTFtagExonParentTranscript Parent --limitGenomeGenerateRAM=200000000000`
 
-Which terminated after throwing an instance of `std::bad_alloc`. A previous run with `runThreadN 20` and no specified argument for `limitGenomeGenerateRAM` threw a fatal error and a prompt as follows:
-
-`EXITING because of FATAL PARAMETER ERROR: limitGenomeGenerateRAM=310000000000 is too small for your genome. SOLUTION: please specify --limitGenomeGenerateRAM not less than 116287777717 and make that much RAM available.`
+Which terminated with an error: `could not create output directory: /star_index for --genomeDir /star_index/`
